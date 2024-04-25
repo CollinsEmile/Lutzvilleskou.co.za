@@ -3,13 +3,11 @@ import facebook from '../images/facebook.svg';
 import twitter from '../images/twitter.svg';
 import hamburger from '../images/hamburger.svg';
 
-const navLinks = document.querySelectorAll('.nav-links');
-console.log(navLinks[0]);
-function handleClick() {
-  for (let i = 0; i < navLinks.length; i++) {
-    navLinks[i].classList.toggle('expanded');
-  }
-}
+// function handleClick() {
+//   for (let i = 0; i < navLinks.length; i++) {
+//     navLinks[i].classList.toggle('expanded');
+//   }
+// }
 
 const Navbar = ({ logo, items }) => {
   return (
@@ -55,7 +53,15 @@ const Navbar = ({ logo, items }) => {
             />
           </a>
         </div>
-        <button onClick={handleClick} className="lg:hidden">
+        <button
+          onClick={() => {
+            const navLinks = document.querySelectorAll('.nav-links');
+            // for (let index = 0; index < navLinks.length; index++) {
+            //   navLinks[index].classList.toggle('expanded');
+            navLinks[0].classList.toggle('expanded');
+            navLinks[1].classList.toggle('expanded');
+          }}
+          className="lg:hidden">
           <img src={hamburger.src} alt="menu icon" className="h-7" />
         </button>
       </div>
