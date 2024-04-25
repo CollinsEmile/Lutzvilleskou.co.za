@@ -1,0 +1,54 @@
+---
+import NAVBAR from "./NAVBAR.js"
+import facebook from '../images/facebook.svg';
+import twitter from '../images/twitter.svg';
+import instagram from '../images/instagram.svg';
+---
+
+<footer class="p-10 flex md:flex-row flex-col justify-around bg-gray-200 text-gray-950 h-68 border-t-4 border-gray-900">
+    <ul class="flex flex-wrap md:w-72 w-full items-center text-center md:my-0 my-5">
+            {NAVBAR.map((item) => (
+              <li
+                class="hover:underline text-lg p-1 md:w-72 w-full">
+                <a href={item.link} class="">{item.name}</a>
+              </li>
+            ))}
+    </ul>
+    <img src="/LutzvilleLogo21.png" class="md:h-56 md:w-auto max-w-72 mx-auto">
+    <div class="lg:flex w-72 hidden">
+            <div class="flex flex-row h-56 items-center">
+                <div class="ml-5 text-left">
+                    <h4 class="text-lg">Address</h4>
+                    <p>
+                        Posbus 182 <br>
+                        Lutzville  <br>
+                        8165        <br>
+                        Lutzville Sportsgronde <br>
+                    </p>
+                </div>
+            </div>
+            <div class="h-full flex flex-col place-content-center ml-10 gap-5">
+                  <a href="">
+                    <img
+                      src={instagram.src}
+                      alt="Link to instagram account"
+                      class="h-[2rem] mx-1"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src={facebook.src}
+                      alt="Link to facebook account"
+                      class="h-[2rem] mx-1"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src={twitter.src}
+                      alt="Link to twitter account"
+                      class="h-[2rem] mx-1"
+                    />
+                  </a>
+            </div>
+        </div>
+</footer>

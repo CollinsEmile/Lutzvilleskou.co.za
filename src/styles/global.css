@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Landing {
+  background-image: url('../images/landing.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.aboutBanner {
+  background-image: url('../images/landing.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.backgroundImageFixed {
+  background-image: url('../images/landing.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#ContactForm {
+  background-image: url('../images/Karoo.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+textarea {
+  resize: none;
+}
+
+.kontakBackground {
+  background-image: url('../images/landing.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* navbar hamburger click */
+  .nav-links {
+    display: none;
+  }
+  .expanded {
+    display: flex;
+  }
+}
