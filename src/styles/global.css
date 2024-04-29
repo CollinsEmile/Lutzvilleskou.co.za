@@ -4,26 +4,33 @@
 @tailwind utilities;
 
 .Landing {
-  background-image: url('../images/landing.jpg');
+  background-image: url('../images/blomme1.jpg');
   background-position: center;
   background-size: cover;
 }
 
 .aboutBanner {
-  background-image: url('../images/landing.jpg');
+  background-image: url('../images/vineyard.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .backgroundImageFixed {
-  background-image: url('../images/landing.jpg');
+  background-image: url('../images/stalletjies7.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.backgroundImageFixed1 {
+  background-image: url('../images/perde12.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 #ContactForm {
-  background-image: url('../images/Karoo.jpg');
+  background-image: url('../images/karoo6.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

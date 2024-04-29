@@ -2,32 +2,36 @@
 import SPONSERS from './SPONSERS.js';
 import phone from '/public/phone.svg';
 import email from '/public/email.svg'
+import Stalletjie from '../images/stalletjies5.jpg';
+import Perde from '../images/Perde.jpg';
 ---
 <section id="HomepageContent" class="my-16">
-    <div class="flex flex-col text-center px-10 md:px-[10%] lg:px-[20%]">
+    <div class="flex flex-col text-center px-10 md:px-[10%] lg:px-[20%] gap-5">
         <h2 class="text-5xl underline-offset-2 mb-9 font-bodoni uppercase">Lutzville Skou</h2>
         <div class="w-full flex md:flex-row flex-col gap-5">
-            <p class="text-justify text-lg mb-5 md:w-2/3">
+            <p class="text-justify text-lg mb-5 md:w-2/3 self-center">
                 Die 76ste Lutzville Landbouskou, van 31 Julie tot 3 Augustus 2024, beloof om 'n viering van tradisie, geselligheid en sukses te wees op die Lutzville Skougronde. Ons kyk uit na 'n skou wat al ons verwagtinge oortref en waar almal van ons gemeenskap saamkom vir 'n onvergeetlike ervaring.
+                Met trots kan ons terugkyk na 'n uiters suksesvolle skou verlede jaar, wat nie net 'n hoogtepunt in ons dorpie se kalender was nie, maar ook 'n blywende impak op ons gemeenskap gemaak het. Die ondersteuning van ons besoekers, perdryers, stalletjies en nuwe deelnemers was inspirerend, en ons is reeds besig om 'n groter en beter skou vir hierdie jaar te beplan.
             </p>
             <div class="md:w-1/3">
-                <img src="" alt="Fotos" class="">
+                <img src={Stalletjie.src} alt="Fotos" class="">
             </div>
         </div>
-        <div class="w-full flex md:flex-row flex-col gap-5">
+        <!-- <div class="w-full flex md:flex-row flex-col gap-5">
             <p class="text-justify text-lg mb-5 md:w-1/2 ">
                 Met trots kan ons terugkyk na 'n uiters suksesvolle skou verlede jaar, wat nie net 'n hoogtepunt in ons dorpie se kalender was nie, maar ook 'n blywende impak op ons gemeenskap gemaak het. Die ondersteuning van ons besoekers, perdryers, stalletjies en nuwe deelnemers was inspirerend, en ons is reeds besig om 'n groter en beter skou vir hierdie jaar te beplan.
             </p>
             <p class="text-justify text-lg mb-5 md:w-1/2 ">
                 Die Lutzville Landbouskou is 'n viering van ons ryk erfenis en die hartlike gasvryheid wat ons dorpie kenmerk. Sedert die eerste skou in 1946 het dit uitgegroei tot 'n fees van musiek, stalletjies, vermaak, en kompetisies wat nie net opwinding bring nie, maar ook noodsaaklike beleggings in ons area aanmoedig. Ons is trots op ons plaaslike kultuur, kos, wyn, en die vriendelike ontvangs wat elke jaar meer besoekers lok.
             </p>
-        </div>
+        </div> -->
         <div class="w-full flex md:flex-row flex-col gap-5">
             <div class="md:w-1/3">
-                <img src="" alt="Fotos" class="">
+                <img src={Perde.src} alt="Fotos" class="object-cover">
             </div>
-            <div class="md:w-2/3 gap-5">
+            <div class="md:w-2/3 gap-5 self-center">
                 <p class="text-justify text-lg mb-5">
+                    Die Lutzville Landbouskou is 'n viering van ons ryk erfenis en die hartlike gasvryheid wat ons dorpie kenmerk. Sedert die eerste skou in 1946 het dit uitgegroei tot 'n fees van musiek, stalletjies, vermaak, en kompetisies wat nie net opwinding bring nie, maar ook noodsaaklike beleggings in ons area aanmoedig. Ons is trots op ons plaaslike kultuur, kos, wyn, en die vriendelike ontvangs wat elke jaar meer besoekers lok.
                     Die afgelope skou het bewys dat ons gemeenskap in staat is tot groot dinge. Met meer as 3000 mense wat aan die pret deelgeneem het, insluitend besoekers van so ver as Kaapstad en perderyers van Napier en Springbok, het ons 'n positiewe impak op plaaslike besighede en die ekonomie gehad. Dit het ons ook die geleentheid gegee om die skougronde te verbeter, wat 'n langtermynvoordeel vir ons dorpie inhou.
                 </p>
             </div>

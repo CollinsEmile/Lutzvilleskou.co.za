@@ -1,5 +1,12 @@
 ---
 import BaseLayout from "../layout/BaseLayout.astro"
+import stalletjies1 from '../images/stalletjies1.jpg'
+import pakkie1 from '../images/pakkie1.jpg'
+import pakkie from '../images/pakkie.jpg'
+import potjie from '../images/potjie.jpg'
+import potjie1 from '../images/potjie1.jpg'
+import potjie4 from '../images/potjie4.jpg'
+import aandkuier from '../images/aandkuier.jpg'
 ---
 <BaseLayout title="Skou Stalletjies" description="Die stalletjies wat op die skou gronde gaan wees, en die aansoeke om 'n stalletjie te kry">
     <section class="pt-32">
@@ -7,15 +14,36 @@ import BaseLayout from "../layout/BaseLayout.astro"
             <h2 class="text-3xl my-4">Stalletjies</h2>
             <p class="text-justify">Vermaak vir jonk en oud - dit beloof die skou in 2024.  Daar is prag perde en uitmuntende skape wat ten toon gestel word op vanjaar se skou.  Stalletjies wat ieder en elk se oog sal vang, sowel as kinder vermaak areas.  Poppekas vertonings en 'n inkleur kompetisie is maar twee van die heerlike aktiwiteite wat vir u kleuter wag.  Vir die grooter kinders en die jonk van gees, daar is iets vir almal.</p>
         </div>
-        <div class="flex gap-5 flex-wrap justify-evenly md:px-[10%] py-10">
-            <div class="h-40 w-40 bg-black"></div>
-            <div class="h-40 w-40 bg-black"></div>
-            <div class="h-40 w-40 bg-black"></div>
-            <div class="h-40 w-40 bg-black"></div>
-            <div class="h-40 w-40 bg-black"></div>
-            <div class="h-40 w-40 bg-black"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 w-full md:w-4/5 lg:w-3/5 px-3 sm:px-10 md:px-0  mx-auto py-16 gap-5">
+            <div class="grid min auto-rows-min gap-5">
+                <div class="h-full w-full">
+                    <img src={stalletjies1.src} alt="" class="object-cover">
+                </div>
+                <div class="h-full w-full">
+                    <img src={pakkie1.src} alt="" class="object-cover">
+                </div>
+                <div class="h-full w-full">
+                    <img src={aandkuier.src} alt="">
+                </div>
+            </div>
+            <div class="grid min auto-rows-min gap-5">
+                <div class="h-full w-full">
+                    <img src={potjie.src} alt="" class="object-cover">
+                </div>
+                <div class="h-full w-full">
+                    <img src={potjie1.src} alt="" class="object-cover">
+                </div>
+            </div>
+            <div class="grid min auto-rows-min gap-5">
+                <div class="h-full w-full">
+                    <img src={potjie4.src} alt="" class="object-cover">
+                </div>
+                <div class="h-full w-full">
+                    <img src={pakkie.src} alt="" class="object-cover object-center">
+                </div>
+            </div>
         </div>
-        <div class="w-dvw h-72 backgroundImageFixed flex items-center">
+        <div class="w-dvw h-96 backgroundImageFixed flex items-center">
             <div class="mx-auto w-fit h-fit">
                 <a href="/StalletjieAansoek.pdf" class="text-2xl md:text-4xl border-4 p-3 md:p-10 border-gray-700 bg-gray-50 rounded-full hover:bg-gray-700 hover:border-gray-50 hover:text-gray-100">Stalletjie Aansoek Vorms</a>
             </div>
