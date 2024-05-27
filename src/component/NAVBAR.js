@@ -16,7 +16,7 @@ const NAVBAR = [
   },
   {
     key: '3',
-    name: 'Perde Program',
+    name: 'Perde Skou',
     link: '/perde/',
   },
   {
