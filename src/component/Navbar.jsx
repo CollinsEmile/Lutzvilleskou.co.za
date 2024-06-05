@@ -30,28 +30,28 @@ const Navbar = ({ logo, items }) => {
           </ul>
         </div>
         {/* Social Links */}
-        <div className="nav-links absolute h-fit left-0 top-[32rem] md:top-[30rem] w-[100vw] lg:w-fit lg:relative lg:flex lg:flew-row lg:top-0 gap-x-5 justify-center items-center">
-          <a href="">
+        <div className="nav-links absolute h-fit left-0 top-[40rem] md:top-[30rem] w-[100vw] lg:w-fit lg:relative lg:flex lg:flew-row lg:top-0 gap-x-5 justify-center items-center">
+          {/* <a href="">
             <img
               src={instagram.src}
               alt="Link to instagram account"
               className="h-[2rem]"
             />
-          </a>
-          <a href="">
+          </a> */}
+          <a href="https://www.facebook.com/share/cEm4Cr2ARQ2xqdNu/">
             <img
               src={facebook.src}
               alt="Link to facebook account"
               className="h-[2rem]"
             />
           </a>
-          <a href="">
+          {/* <a href="">
             <img
               src={twitter.src}
               alt="Link to twitter account"
               className="h-[2rem]"
             />
-          </a>
+          </a> */}
         </div>
         <button
           onClick={() => {

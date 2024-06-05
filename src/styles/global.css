@@ -47,6 +47,10 @@ textarea {
   background-attachment: fixed;
 }
 
+.slick-dots li button:before {
+  color: #f7f7f7 !important;
+}
+
 @media only screen and (max-width: 1024px) {
   /* navbar hamburger click */
   .nav-links {

@@ -1,13 +1,13 @@
 const NAVBAR = [
   {
     key: '0',
-    name: 'Tuis',
-    link: '/',
+    name: 'Wie Is Ons?',
+    link: '/about/',
   },
   {
     key: '1',
-    name: 'Wie Is Ons?',
-    link: '/about/',
+    name: 'Aktiwiteite',
+    link: '/activities/',
   },
   {
     key: '2',
@@ -16,8 +16,8 @@ const NAVBAR = [
   },
   {
     key: '3',
-    name: 'Perde Skou',
-    link: '/perde/',
+    name: 'Informasie',
+    link: '/info/',
   },
   {
     key: '4',
