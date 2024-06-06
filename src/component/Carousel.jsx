@@ -23,7 +23,7 @@ const ImageCarousel = ({ items }) => {
     <div className="min-h-fit relative w-[100%] text-gray-50">
       <button
         onClick={() => sliderRef?.current?.slickPrev()}
-        className="text-gray-50 absolute md:top-[50%] bottom-0 left-0 z-50">
+        className="text-gray-50 absolute md:top-[50%] bottom-0 left-0 z-40">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="4rem"
@@ -39,7 +39,7 @@ const ImageCarousel = ({ items }) => {
       </button>
       <button
         onClick={() => sliderRef?.current?.slickNext()}
-        className="text-gray-50 absolute md:top-[50%] bottom-0 right-0 z-50">
+        className="text-gray-50 absolute md:top-[50%] bottom-0 right-0 z-40">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="4rem"

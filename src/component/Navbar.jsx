@@ -1,6 +1,4 @@
-import instagram from '../images/instagram.svg';
 import facebook from '../images/facebook.svg';
-import twitter from '../images/twitter.svg';
 import hamburger from '../images/hamburger.svg';
 
 // function handleClick() {
@@ -38,7 +36,7 @@ const Navbar = ({ logo, items }) => {
               className="h-[2rem]"
             />
           </a> */}
-          <a href="https://www.facebook.com/share/cEm4Cr2ARQ2xqdNu/">
+          <a href="https://www.facebook.com/share/VSo4BrR9fNgdKRPf/?mibextid=qi2Omg">
             <img
               src={facebook.src}
               alt="Link to facebook account"

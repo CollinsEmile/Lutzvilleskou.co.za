@@ -1,19 +1,19 @@
 const PERDE = [
   {
     title: 'Prag Perde',
-    image: '/pragperde.jpg',
+    image: '/pragperde.webp',
   },
   {
     title: 'Skou Perde',
-    image: '/perde7.jpg',
+    image: '/perde7.webp',
   },
   {
     title: 'Koets',
-    image: '/koets2.jpg',
+    image: '/koets2.webp',
   },
   {
     title: 'Oulike Perde',
-    image: '/perde2.jpg',
+    image: '/perde2.webp',
   },
 ];
 export default PERDE;

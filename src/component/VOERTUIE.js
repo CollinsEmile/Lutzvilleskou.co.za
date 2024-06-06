@@ -1,47 +1,47 @@
 const VOERTUIE = [
   {
     title: 'Trekker',
-    image: '/trekker1.jpg',
+    image: '/trekker1.webp',
   },
   {
     title: 'Trekker 2',
-    image: '/trekker2.jpg',
+    image: '/trekker2.webp',
   },
   {
     title: 'Trekker 3',
-    image: '/trekker3.jpg',
+    image: '/trekker3.webp',
   },
   {
     title: 'Trekker 4',
-    image: '/trekker4.jpg',
+    image: '/trekker4.webp',
   },
   {
     title: 'Trekker 5',
-    image: '/trekker5.jpg',
+    image: '/trekker5.webp',
   },
   {
     title: 'Trekkers',
-    image: '/trekkers.jpg',
+    image: '/trekkers.webp',
   },
   {
     title: 'Veteran Voertuig',
-    image: '/Veteran1.jpg',
+    image: '/Veteran1.webp',
   },
   {
     title: 'Veteran Voertuig 2',
-    image: '/Veteran2.jpg',
+    image: '/Veteran2.webp',
   },
   {
     title: 'Veteran Voertuig 3',
-    image: '/Veteran3.jpg',
+    image: '/Veteran3.webp',
   },
   {
     title: 'Veteran Voertuig 4',
-    image: '/Veteran4.jpg',
+    image: '/Veteran4.webp',
   },
   {
     title: 'Veteran Voertuig 5',
-    image: '/Veteran5.jpg',
+    image: '/Veteran5.webp',
   },
 ];
 export default VOERTUIE;
