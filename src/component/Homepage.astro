@@ -63,15 +63,16 @@ import Perde from '../images/Perde.webp';
         <div class="bg-gray-50/70 p-10 rounded-3xl shadow-gray-900 drop-shadow-2xl">
             <h2 class="text-center text-5xl mb-5 capitalize">Stuur <span class="lowercase">'n</span> boodskap</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <form action="" class="flex flex-col xl:px-24 py-10 gap-5">
+                <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col xl:px-24 py-10 gap-5">
+                    <input type="hidden" name="access_key" value="243f9187-450a-4f7a-bd5c-8f680df12571">
                     <div class="flex gap-5">
-                        <input type="text" placeholder="Name" class="p-3 rounded-md border-2 border-gray-900 w-1/2">
-                        <input type="text" placeholder="Surname" class="p-3 rounded-md border-2 border-gray-900 w-1/2">
+                        <input type="text" id="Naam" name="Naam" placeholder="Naam" class="p-3 rounded-md border-2 border-gray-900 w-1/2">
+                        <input type="text" id="Van" name="Van" placeholder="Van" class="p-3 rounded-md border-2 border-gray-900 w-1/2">
                     </div>
-                    <input type="text" placeholder="Email" class="p-3 rounded-md border-2 border-gray-900">
-                    <input type="text" placeholder="Cellphone" class="p-3 rounded-md border-2 border-gray-900">
-                    <textarea placeholder="Message" class="p-3 rounded-md border-2 border-gray-900"></textarea>
-                    <button class="w-1/2 mx-auto p-3 bg-transparent text-gray-900 font-semibold rounded-full text-2xl uppercase hover:bg-gray-900 border-2 hover:border-gray-50 hover:text-gray-50 border-gray-900 mt-5">Stuur</button>
+                    <input type="email" id="Epos" name="Epos" placeholder="Epos" class="p-3 rounded-md border-2 border-gray-900">
+                    <input type="number" id="Tel" name="Tel" placeholder="Tel" class="p-3 rounded-md border-2 border-gray-900">
+                    <textarea id="Boodskap" name="Boodskap" placeholder="Boodskap" class="p-3 rounded-md border-2 border-gray-900"></textarea>
+                    <button type="submit" class="w-1/2 mx-auto p-3 bg-transparent text-gray-900 font-semibold rounded-full text-2xl uppercase hover:bg-gray-900 border-2 hover:border-gray-50 hover:text-gray-50 border-gray-900 mt-5">Stuur</button>
                 </form>
                 <div class="flex flex-col place-content-center items-center h-full gap-5">
                     <div class="flex flex-col items-center">

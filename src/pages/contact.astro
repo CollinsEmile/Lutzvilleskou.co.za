@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layout/BaseLayout.astro"
 ---
-<BaseLayout title="Kontak Ons">
+<BaseLayout title="Kontak Ons" description="Kry ons in die hande vir meer inligting.">
     <section class="py-32 kontakBackground">
         <div class="w-4/5 sm:w-3/5 md:w-full  lg:w-4/5 xl:w-3/5 mx-auto p-10 my-5 shadow-lg shadow-gray-800 rounded-lg bg-gray-50">
             <h2 class="text-center uppercase text-2xl py-5 font-semibold">Kontak Ons</h2>
@@ -31,13 +31,14 @@ import BaseLayout from "../layout/BaseLayout.astro"
                 </div>
             </div>
         </div>
-        <form class="flex flex-col mt-20 w-fit mx-auto p-8 lg:p-10 gap-3 shadow-lg shadow-gray-800 rounded-lg bg-gray-50">
+        <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col mt-20 w-fit mx-auto p-8 lg:p-10 gap-3 shadow-lg shadow-gray-800 rounded-lg bg-gray-50">
+            <input type="hidden" name="access_key" value="243f9187-450a-4f7a-bd5c-8f680df12571">
             <label class="text-center uppercase text-xl py-5">Kom in kontak</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Naam & Van" class="w-full min-w-56 p-2 border-2 border-gray-500 rounded-md hover:border-gray-900">
-            <input type="text" id="Tel" name="Tel" placeholder="Tel" class="w-full min-w-56 p-2 border-2 border-gray-500 rounded-md hover:border-gray-900">
-            <input type="text" id="Email" name="Email" placeholder="Epos" class="w-full min-w-56 p-2 border-2 border-gray-500 rounded-md hover:border-gray-900">
+            <input type="text" id="Volnaam" name="Volnaam" placeholder="Naam & Van" class="w-full min-w-56 p-2 border-2 border-gray-500 rounded-md hover:border-gray-900">
+            <input type="number" id="Tel" name="Tel" placeholder="Tel" class="w-full min-w-56 p-2 border-2 border-gray-500 rounded-md hover:border-gray-900">
+            <input type="email" id="Epos" name="Email" placeholder="Epos" class="w-full min-w-56 p-2 border-2 border-gray-500 rounded-md hover:border-gray-900">
             <textarea name="Message" id="Message" rows="3" placeholder="Boodskap" class="w-full min-w-56 p-2 border-2 border-gray-500 rounded-md hover:border-gray-900"></textarea>
-            <button class="w-fit mx-auto border-2 rounded-3xl p-2 hover:border-gray-800">Stuur</button>  
+            <button type="submit" class="w-fit mx-auto border-2 rounded-3xl p-2 hover:border-gray-800">Stuur</button>  
         </form>
     </section>
 </BaseLayout>

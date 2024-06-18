@@ -2,12 +2,13 @@
 import BaseLayout from "../layout/BaseLayout.astro"
 import potjie1 from "../images/potjie1.webp"
 import mejLutzville from "../images/mejlutzville1.webp"
+import tugofwar from "../images/tugofwar.webp"
 import ImageCarousel from '../component/Carousel.jsx'
 import PERDE from '../component/PERDE.js'
 import VOERTUIE from '../component/VOERTUIE.js'
 import DarkCarousel from '../component/DarkCarousel.jsx'
 ---
-<BaseLayout title="Aktiwiteite">
+<BaseLayout title="Aktiwiteite" description="Kom sien watse aktiwiteite ons het vir jou.">
     <section id="BannerText" class="pt-32">
         <div class="lg:w-1/2 w-full mx-auto py-5 px-5 lg:px-0">
             <p class="text-xl text-center">
@@ -61,7 +62,7 @@ import DarkCarousel from '../component/DarkCarousel.jsx'
     <section id="VeteranVoertuie" class="xl:px-[20%] lg:px-[10%] md:px-[5%] px-5 py-10 bg-gray-50">
         <div class="flex gap-5 flex-col md:flex-row">
             <div class="md:w-1/2 w-full place-content-center text-center">
-                <h3 class="text-4xl md:text-5xl lg:text-6xl uppercase">Veteran Karre en Trekkers</h3>
+                <h3 class="text-4xl md:text-5xl lg:text-6xl uppercase">Veteraan Karre en Trekkers</h3>
                 <br>
                 <p class="text-xl md:text-2xl">Vir die met 'n nostalgiese oog</p>
             </div>
@@ -70,5 +71,21 @@ import DarkCarousel from '../component/DarkCarousel.jsx'
             </div>
         </div>
     </section>
-
+    <section id="Toutrek">
+        <div class="lg:px-[20%] md:px-[5%] px-5 py-20 flex flex-col md:flex-row gap-y-5 md:gap-y-0 md:gap-x-5">
+            <div class="md:w-1/2 p-5 border-b-2 border-r-2 border-gray-900 h-fit">
+                    <img src={tugofwar.src} alt="" class="w-full rounded-tr-3xl rounded-bl-3xl">
+            </div>
+            <div class="md:w-1/2 md:text-start place-content-center md:border-r-2 md:pr-5 border-gray-50">
+                <h3 class="uppercase text-4xl md:text-6xl">Toutrek Kompetisie</h3>
+                <h3 class="uppercase text-2xl md:text-4xl">31 Julie</h3>
+                <p class="md:text-xl text-lg">
+                    Inskrywings gelde - R400 per span <br>
+                    Inskrywings sluit 15 Julie <br> 
+                    Kontak Jaco vir meer inligting by 078 611 1643
+                </p>
+                <a href="/ToutrekInskrywingsvorm.jpg" class="text-2xl md:text-3xl hover:underline">Skryf in!</a>
+            </div>
+        </div>
+    </section>
 </BaseLayout>
