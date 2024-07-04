@@ -13,7 +13,7 @@ const Navbar = ({ logo, items }) => {
       <div className="flex flew-row justify-between px-[10%] md:items-center py-5 bg-gray-50 text-gray-900 fixed w-full border-b-2 border-gray-900 font-inter font-medium z-50">
         {/* Logo */}
         <a href="/">
-          <img src={logo} alt="" className="h-[5rem]" />
+          <img src={logo} alt="Lutzville Skou Logo" className="h-[5rem]" />
         </a>
         {/* Navbar Links */}
         <div className="nav-links absolute h-[60vh] md:h-[50vh] w-[100vw] left-0 top-[7rem] bg-gray-50 pt-10 lg:flex lg:flew-row lg:h-fit lg:relative lg:bg-transparent lg:w-fit lg:top-0 gap-x-5 lg:pt-0 lg:items-center border-b-2 border-gray-900 lg:border-0">
