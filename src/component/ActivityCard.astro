@@ -1,0 +1,49 @@
+---
+// ActivityCard.astro
+// Individual card component for each activity
+
+interface Props {
+  title: string;
+  // description: string;
+  image: string;
+  buttonText?: string;
+  buttonLink?: string;
+}
+
+const { 
+  title, 
+  // description, 
+  image, 
+  buttonText, 
+  buttonLink 
+} = Astro.props;
+
+// Determine if we should show the button
+const showButton = buttonText && buttonLink;
+---
+
+<div class="rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
+  <!-- Image Container with fixed aspect ratio -->
+  <div class="relative aspect-[3/4] w-full overflow-hidden">
+    <img 
+      src={image} 
+      alt={title} 
+      class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+    />
+  </div>
+  
+  <!-- Content Container -->
+  <div class="p-6 flex flex-col flex-grow text-center">
+    <h3 class="text-xl font-semibold mb-3">{title}</h3>
+    <!-- <p class="text-gray-600 mb-4 flex-grow">{description}</p> -->
+    
+    {showButton && (
+      <a 
+        href={buttonLink} 
+        class="mx-auto inline bg-gray-400 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-300 text-center hover:shadow-md transform hover:-translate-y-1 hover:scale-105 active:translate-y-0 active:scale-100"
+      >
+        {buttonText}
+      </a>
+    )}
+  </div>
+</div>

@@ -1,28 +1,33 @@
 const NAVBAR = [
   {
     key: '0',
-    name: 'Wie Is Ons?',
-    link: '/about/',
+    name: 'Tuis',
+    link: '/',
   },
   {
     key: '1',
-    name: 'Aktiwiteite',
-    link: '/activities/',
+    name: 'Wie Is Ons?',
+    link: '/wieisons/',
   },
   {
     key: '2',
+    name: 'Aktiwiteite',
+    link: '/aktiwiteite/',
+  },
+  {
+    key: '3',
     name: 'Stalletjies',
     link: '/stalletjies/',
   },
   {
-    key: '3',
-    name: 'Informasie',
-    link: '/info/',
+    key: '4',
+    name: 'Inligting',
+    link: '/inligting/',
   },
   {
-    key: '4',
+    key: '5',
     name: 'Kontak Ons',
-    link: '/contact/',
+    link: '/kontakons/',
   },
 ];
 export default NAVBAR;

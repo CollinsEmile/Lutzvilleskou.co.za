@@ -5,6 +5,8 @@ export default {
     fontFamily: {
       bodoni: ['"Libre Bodoni", serif'],
       inter: ['"Inter", sans-serif'],
+      georgia: ['Georgia', 'serif'],
+      playwrite: ['"Playwrite DK Loopet"', 'serif'],
     },
     extend: {},
   },

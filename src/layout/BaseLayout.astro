@@ -1,6 +1,7 @@
 ---
 import OgImage from '/public/koets2.webp';
 import '../styles/global.css';
+import PopupNotice from '../component/PopupNotice';
 interface Props {
     title: string;
     description?: string;
@@ -20,8 +21,9 @@ const { title, description } = Astro.props;
 		<title>{title}</title>
 		<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
 	</head>
-	<body class="font-inter text-gray-900 bg-gray-50">
+	<body class="font-georgia text-gray-900 bg-gray-50">
         <Header></Header>
+		<PopupNotice client:load/>
         <slot/>
 		<Footer></Footer>
 	</body>

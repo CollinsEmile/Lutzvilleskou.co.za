@@ -1,0 +1,36 @@
+---
+import ActivityCard from './ActivityCard.astro';
+
+// Define props with default values
+interface Props {
+  activities?: Activity[];
+}
+
+// Define the Activity type
+interface Activity {
+  id: number;
+  title: string;
+  // description: string;
+  image: string;
+  buttonText?: string;
+  buttonLink?: string;
+}
+
+// Get props with defaults
+const { 
+  activities = []
+} = Astro.props;
+---
+<section class="py-12 px-4 max-w-7xl mx-auto">
+        <!-- Responsive Grid - adjusts number of columns based on viewport width -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+            {activities.map((activity) => (
+            <ActivityCard 
+                title={activity.title}
+                image={activity.image}
+                buttonText={activity.buttonText}
+                buttonLink={activity.buttonLink}
+            />
+            ))}
+        </div>
+    </section>

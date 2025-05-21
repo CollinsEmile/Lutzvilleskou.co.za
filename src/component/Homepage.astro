@@ -1,96 +1,148 @@
 ---
-import SPONSERS from './SPONSERS.js';
+// import SPONSERS from './SPONSERS.js';
 import phone from '/public/phone.svg';
-import email from '/public/email.svg'
-import Stalletjie from '../images/stalletjies5.webp';
-import Perde from '../images/Perde.webp';
+import email from '/public/Mail.png';
+import Stalletjie from '../images/www.lizellelotter.co.zaLutzvilleSkou2024-119.jpg';
+import Perde from '../images/www.lizellelotter.co.zaLutzvilleSkou2024-126.jpg';
+import comittee from '../images/www.lizellelotter.co.zaLutzvilleSkou2024-132.jpg';
+
+// KunstenaarsSection.astro
+// Import the ArtistCard component
+import ArtistCard from './ArtistCard.astro';
+
+// Define the artists data
+const artists = [
+  { id: 1, name: "Leah", image: "/LigteLaag-8.jpg" },
+  { id: 2, name: "Johan van der Merwe", image: "/WhatsApp Image 2025-04-22 at 10.27.07.jpeg" },
+  { id: 3, name: "Armand Steenkamp", image: "/WhatsApp Image 2025-04-22 at 10.27.04.png" },
+  { id: 4, name: "Wikus van der Merwe", image: "/Abri_Kruger_Fine_Art_Photography (130 of 415).jpg" },
+];
+
+// You can also pass artists as a prop if you prefer
+// const { artists } = Astro.props;
 ---
-<section id="HomepageContent" class="my-16">
-    <div class="flex flex-col text-center px-10 md:px-[10%] lg:px-[20%] gap-5">
-        <h2 class="md:text-5xl text-3xl underline-offset-2 mb-9 font-bodoni uppercase">Lutzville Landbouskou</h2>
-        <div class="w-full flex md:flex-row flex-col gap-5">
-            <p class="text-justify text-lg mb-5 md:w-2/3 self-center">
-                Die 76ste Lutzville Landbouskou, van 31 Julie tot 3 Augustus 2024, beloof om 'n viering van tradisie, geselligheid en sukses te wees op die Lutzville Skougronde. Ons kyk uit na 'n skou wat al ons verwagtinge oortref en waar almal van ons gemeenskap saamkom vir 'n onvergeetlike ervaring.
-                Met trots kan ons terugkyk na 'n uiters suksesvolle skou verlede jaar, wat nie net 'n hoogtepunt in ons dorpie se kalender was nie, maar ook 'n blywende impak op ons gemeenskap gemaak het. Die ondersteuning van ons besoekers, perdryers, stalletjies en nuwe deelnemers was inspirerend, en ons is reeds besig om 'n groter en beter skou vir hierdie jaar te beplan.
-            </p>
-            <div class="md:w-1/3 place-content-center">
-                <img src={Stalletjie.src} alt="Shop stands" class="">
+<section id="HomepageContent" class="py-20 bg-white">
+    <div class="container mx-auto px-4 md:px-8 lg:px-12 max-w-6xl">
+        <!-- Main Heading -->
+        <h2 class="text-3xl md:text-4xl lg:text-5xl uppercase font-bodoni text-center mb-12 relative inline-block w-full after:content-[''] after:block after:w-32 after:h-1 after:bg-gray-500 after:mx-auto after:mt-4">
+            Ons 77ste Lutzville Landbouskou
+        </h2>
+        
+        <!-- First Content Block -->
+        <div class="flex flex-col md:flex-row gap-8 mb-16">
+            <div class="md:w-1/2 self-center">
+                <p class="text-lg leading-relaxed text-justify">
+                    <span class="font-bold text-gray-800 block mb-3">Kom geniet 'n viering van tradisie, geselligheid en sukses op die Lutzville skougronde van 31 Julie tot 2 Augustus 2025.</span>
+                    Ons sien uit na 'n skou wat al ons verwagtinge oortref - 'n geleentheid waar die hele gemeenskap saamkom vir 'n onvergeetlike ervaring.
+                </p>
+            </div>
+            <div class="md:w-1/2 overflow-hidden rounded-lg shadow-md h-[300px] md:h-auto">
+                <img src={Stalletjie.src} alt="Shop stands" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
             </div>
         </div>
-        <!-- <div class="w-full flex md:flex-row flex-col gap-5">
-            <p class="text-justify text-lg mb-5 md:w-1/2 ">
-                Met trots kan ons terugkyk na 'n uiters suksesvolle skou verlede jaar, wat nie net 'n hoogtepunt in ons dorpie se kalender was nie, maar ook 'n blywende impak op ons gemeenskap gemaak het. Die ondersteuning van ons besoekers, perdryers, stalletjies en nuwe deelnemers was inspirerend, en ons is reeds besig om 'n groter en beter skou vir hierdie jaar te beplan.
-            </p>
-            <p class="text-justify text-lg mb-5 md:w-1/2 ">
-                Die Lutzville Landbouskou is 'n viering van ons ryk erfenis en die hartlike gasvryheid wat ons dorpie kenmerk. Sedert die eerste skou in 1946 het dit uitgegroei tot 'n fees van musiek, stalletjies, vermaak, en kompetisies wat nie net opwinding bring nie, maar ook noodsaaklike beleggings in ons area aanmoedig. Ons is trots op ons plaaslike kultuur, kos, wyn, en die vriendelike ontvangs wat elke jaar meer besoekers lok.
-            </p>
-        </div> -->
-        <div class="w-full flex md:flex-row flex-col gap-5">
-            <div class="md:w-1/3 place-content-center">
-                <img src={Perde.src} alt="Horses running" class="object-cover">
+        
+        <!-- Second Content Block -->
+        <div class="flex flex-col md:flex-row gap-8 mb-16">
+            <div class="md:w-1/2 overflow-hidden rounded-lg shadow-md h-[300px] md:h-auto order-2 md:order-1">
+                <img src={Perde.src} alt="Horses running" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
             </div>
-            <div class="md:w-2/3 gap-5 self-center">
-                <p class="text-justify text-lg mb-5">
-                    Die Lutzville Landbouskou is 'n viering van ons ryk erfenis en die hartlike gasvryheid wat ons dorpie kenmerk. Sedert die eerste skou in 1946 het dit uitgegroei tot 'n fees van musiek, stalletjies, vermaak, en kompetisies wat nie net opwinding bring nie, maar ook noodsaaklike beleggings in ons area aanmoedig. Ons is trots op ons plaaslike kultuur, kos, wyn, en die vriendelike ontvangs wat elke jaar meer besoekers lok.
-                    Die afgelope skou het bewys dat ons gemeenskap in staat is tot groot dinge. Met meer as 3000 mense wat aan die pret deelgeneem het, insluitend besoekers van so ver as Kaapstad en perderyers van Napier en Springbok, het ons 'n positiewe impak op plaaslike besighede en die ekonomie gehad. Dit het ons ook die geleentheid gegee om die skougronde te verbeter, wat 'n langtermynvoordeel vir ons dorpie inhou.
+            <div class="md:w-1/2 self-center order-1 md:order-2">
+                <p class="text-lg leading-relaxed text-justify">
+                    Met trots kyk ons terug na verlede jaar se uiters suksesvolle skou, wat nie net 'n hoogtepunt op ons dorpskalender was nie, maar ook 'n blywende impak op die gemeenskap gehad het. Die ondersteuning van besoekers, perderyers, uitstallers en nuwe deelnemers was werklik inspirerend, en ons is reeds besig om 'n nóg groter en beter skou vir vanjaar te beplan.
                 </p>
             </div>
         </div>
-        <p class="text-justify text-lg">
-            Ons sien uit daarna om saam met jou die 76ste Lutzville Landbouskou 'n onvergeetlike gebeurtenis te maak.
-            <br>
-            Met opregte dankbaarheid en beste wense,
-            <br>
-            Lutzville Landbouskou Komitee
-        </p>
+        
+        <!-- Third Content Block -->
+        <div class="flex flex-col md:flex-row gap-8 mb-16">
+            <div class="md:w-1/2 self-center">
+                <p class="text-lg leading-relaxed text-justify">
+                    Die Lutzville Landbouskou is 'n viering van ons ryk erfenis en die opregte gasvryheid waarvoor ons dorpie bekend is. Sedert die eerste skou in 1946 het dit gegroei tot 'n fees van musiek, uitstallings, vermaak en kompetisies - 'n gebeurtenis wat nie net opwinding bring nie, maar ook belangrike beleggings in ons streek aanmoedig.
+                </p>
+            </div>
+            <div class="md:w-1/2 overflow-hidden rounded-lg shadow-md h-[300px] md:h-auto">
+                <img src={comittee.src} alt="Committee" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+            </div>
+        </div>
+        
+        <!-- Final Paragraph -->
+        <div class="bg-gray-50 p-6 md:p-8 rounded-lg shadow-sm border border-gray-100">
+            <p class="text-lg leading-relaxed text-justify">
+                Ons is trots op ons plaaslike kultuur, kos, wyn en die hartlike ontvangs wat jaarliks al hoe meer besoekers lok. Die afgelope skou het bewys dat ons gemeenskap tot groot dinge in staat is. Met meer as 3 000 mense wat aan die feespret deelgeneem het - insluitend besoekers van so ver as Kaapstad, en perderyers van Napier en Springbok - het ons 'n beduidende impak op plaaslike ondernemings en die ekonomie gemaak.
+            </p>
+        </div>
     </div>
 </section>
-<!-- Sponsers -->
-<!-- Geen Borge op die oomblik nie maar ons hou dit vir na die skou -->
-<!-- <section id="sponsers" class="w-full bg-gray-900 py-20 border-b-2 border-yellow-500">
-    <h2 class="text-center mb-5 text-5xl font-bodoni text-yellow-500 uppercase underline underline-offset-8">Dankie Ons Borge</h2>
-    <div class="flex flex-row flex-wrap w-[80%] md:w-[70%] lg:w-[50%] mx-auto justify-evenly pt-5 gap-3">
-        {SPONSERS.map((item) => (
-            <div class="text-center bg-gray-50 p-3 rounded-lg text-gray-900">
-                <img id={item.key} src={item.image} alt={item.name} class="h-[100px]"/>
-                <h5 class="mt-3">{item.name}</h5>
-            </div>
-        ))}
-    </div>
-</section> -->
-<section id="ContactForm" class="w-full h-fit">
-    <div class="md:p-[10%] p-5">
-        <div class="bg-gray-50/70 p-10 rounded-3xl shadow-gray-900 drop-shadow-2xl">
-            <h2 class="text-center text-5xl mb-5 capitalize">Stuur <span class="lowercase">'n</span> boodskap</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col xl:px-24 py-10 gap-5">
-                    <input type="hidden" name="access_key" value="243f9187-450a-4f7a-bd5c-8f680df12571">
-                    <div class="flex gap-5">
-                        <input type="text" id="Naam" name="Naam" placeholder="Naam" class="p-3 rounded-md border-2 border-gray-900 w-1/2">
-                        <input type="text" id="Van" name="Van" placeholder="Van" class="p-3 rounded-md border-2 border-gray-900 w-1/2">
+
+<!-- Artists Section -->
+<section class="py-16 px-4 bg-gray-50 border-t border-b border-gray-200">
+    <div class="container mx-auto max-w-6xl">
+        <!-- Section Title -->
+        <h2 class="text-3xl md:text-4xl uppercase font-bodoni text-center mb-12 relative inline-block w-full after:content-[''] after:block after:w-32 after:h-1 after:bg-gray-500 after:mx-auto after:mt-4">
+            Kunstenaars 2025
+        </h2>
+        
+        <!-- Responsive Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {artists.map((artist) => (
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 hover:scale-102 hover:shadow-lg">
+                    <div class="h-96 overflow-hidden">
+                        <img src={artist.image} alt={artist.name} class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110">
                     </div>
-                    <input type="email" id="Epos" name="Epos" placeholder="Epos" class="p-3 rounded-md border-2 border-gray-900">
-                    <input type="number" id="Tel" name="Tel" placeholder="Tel" class="p-3 rounded-md border-2 border-gray-900">
-                    <textarea id="Boodskap" name="Boodskap" placeholder="Boodskap" class="p-3 rounded-md border-2 border-gray-900"></textarea>
-                    <button type="submit" class="w-1/2 mx-auto p-3 bg-transparent text-gray-900 font-semibold rounded-full text-2xl uppercase hover:bg-gray-900 border-2 hover:border-gray-50 hover:text-gray-50 border-gray-900 mt-5">Stuur</button>
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">{artist.name}</h3>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section (Closer to original design) -->
+<section id="ContactForm" class="w-full h-fit py-16 bg-gradient-to-b from-white to-gray-100">
+    <div class="w-10/12 md:w-4/5 lg:w-3/4 mx-auto">
+        <div class="bg-gray-50/60 p-8 md:p-10 rounded-3xl shadow-lg">
+            <h2 class="text-center text-3xl md:text-4xl lg:text-5xl mb-5 relative inline-block w-full after:content-[''] after:block after:w-32 after:h-1 after:bg-gray-500 after:mx-auto after:mt-4">Kontak Ons</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Form Column -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col xl:px-12 py-8 gap-5">
+                    <input type="hidden" name="access_key" value="243f9187-450a-4f7a-bd5c-8f680df12571">
+                    <div class="flex flex-col sm:flex-row gap-5">
+                        <input type="text" id="Naam" name="Naam" placeholder="Naam" class="p-3 rounded-md border-2 border-gray-300 w-full sm:w-1/2 focus:border-gray-500 focus:outline-none transition-colors duration-200">
+                        <input type="text" id="Van" name="Van" placeholder="Van" class="p-3 rounded-md border-2 border-gray-300 w-full sm:w-1/2 focus:border-gray-500 focus:outline-none transition-colors duration-200">
+                    </div>
+                    
+                    <input type="email" id="Epos" name="Epos" placeholder="Epos" class="p-3 rounded-md border-2 border-gray-300 focus:border-gray-500 focus:outline-none transition-colors duration-200">
+                    
+                    <input type="tel" id="Tel" name="Selfoonnommer" placeholder="Selfoonnommer" class="p-3 rounded-md border-2 border-gray-300 focus:border-gray-500 focus:outline-none transition-colors duration-200">
+                    
+                    <textarea id="Boodskap" name="Boodskap" placeholder="Boodskap" rows="5" class="p-3 rounded-md border-2 border-gray-300 focus:border-gray-500 focus:outline-none transition-colors duration-200"></textarea>
+                    
+                    <button type="submit" class="w-1/2 mx-auto p-3 bg-transparent text-gray-800 font-semibold rounded-full text-xl uppercase border-2 border-gray-800 hover:bg-gray-800 hover:text-white transition-all duration-300 transform hover:scale-105 mt-4">
+                        Stuur
+                    </button>
                 </form>
-                <div class="flex flex-col place-content-center items-center h-full gap-5">
+                
+                <!-- Contact Info Column (More similar to original) -->
+                <div class="flex flex-col justify-center items-center h-full gap-8 py-8">
+                    <!-- Phone Contacts -->
                     <div class="flex flex-col items-center">
-                        <img src={phone.src} alt="Phone" class="h-15 md:h-24">
-                        <div class="text-lg lg:text-2xl text-center my-3">
-                            <ul>
-                                <li>
-                                    Melanie Agenbag - 083 283 3617
-                                </li>
+                        <img src={phone.src} alt="Phone" class="h-10 md:h-12 mb-4">
+                        <div class="text-center">
+                            <ul class="space-y-2 text-2xl">
+                                <li>Melanie Agenbag - 083 283 3617</li>
                             </ul>
                         </div>
                     </div>
+                    
+                    <!-- Email Contacts -->
                     <div class="flex flex-col items-center">
-                        <img src={email.src} alt="message" class="h-15 md:h-24">
-                        <div class="text-lg lg:text-2xl text-center my-3">
-                            <ul>
-                                <li>info@lutzvilleskou.co.za</li>
+                        <img src={email.src} alt="Email" class="h-10 md:h-12 mb-4">
+                        <div class="text-center">
+                            <ul class="space-y-2 text-2xl">
                                 <li>admin@lutzvilleskou.co.za</li>
+                                <li>info@lutzvilleskou.co.za</li>
                             </ul>
                         </div>
                     </div>

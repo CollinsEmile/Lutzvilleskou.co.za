@@ -1,0 +1,160 @@
+---
+import BaseLayout from "../layout/BaseLayout.astro"
+import PotjieField from "../images/PotjieField.webp"
+import House from "../images/Asset 10@4x.png"
+import Aansoekvorm from "../images/Asset 11@4x.png"
+import Program from "../images/Asset 9@4x.png"
+
+---
+<BaseLayout title="Informasie" description="Informasie vir die Lutzville Landbouskou.">
+    <section id="Inligting" class="w-full min-h-screen bg-gradient-to-b from-white to-gray-100 py-16">
+        
+        <div class="container mx-auto px-4 py-12 max-w-6xl">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl uppercase font-georgia font-bold text-gray-100 relative inline-block after:content-[''] after:block after:w-24 after:h-1 after:bg-gray-100/90 after:mx-auto after:mt-3">Inligting</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Verblyf Block -->
+                <div class="bg-white rounded-lg p-6 border border-gray-200 flex flex-col items-center">
+                    <h3 class="text-2xl font-bold uppercase text-gray-800 mb-2 text-center">Verblyf</h3>
+                    
+                    <!-- Icon Placeholder -->
+                    <div class="w-16 h-16 flex items-center justify-center mb-4">
+                        <img
+                      src={House.src}
+                      alt="Housing Icon"
+                      class="h-[3rem] w-[3rem] mx-1"
+                    />
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg> -->
+                    </div>
+                    
+                    <p class="text-gray-700 text-center mb-4">
+                        Daar is 'n gratis kampeer area beskikbaar. Sien asseblief kaart vir die kampeer area:
+                    </p>
+                    
+                    <a href="/kamp-kaart.jpg" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 transition-colors">
+                        Kamp Kaart
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Aansoekvorms Block -->
+                <div class="bg-white rounded-lg p-6 border border-gray-200 flex flex-col items-center">
+                    <h3 class="text-2xl font-bold uppercase text-gray-800 mb-2 text-center">Aansoekvorms</h3>
+                    
+                    <!-- Icon Placeholder -->
+                    <div class="w-16 h-16 flex items-center justify-center mb-4">
+                        <img
+                            src={Aansoekvorm.src}
+                            alt="Application Form Icon"
+                            class="h-[3rem] w-[3rem] mx-1"
+                        />
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg> -->
+                    </div>
+                    
+                    <div class="w-full space-y-3">
+                        <a href="/stalletjie-aansoeke.pdf" target="_blank" class="block w-full text-center py-2 px-4 bg-gray-100 hover:bg-gray-200 rounded text-gray-800 transition-colors">
+                            Stalletjie Aansoeke
+                        </a>
+                        <a href="/perde-skou-inskrywings.pdf" target="_blank" class="block w-full text-center py-2 px-4 bg-gray-100 hover:bg-gray-200 rounded text-gray-800 transition-colors">
+                            Perde Skou Inskrywings
+                        </a>
+                        <a href="/potjiekos-kompetisie.pdf" target="_blank" class="block w-full text-center py-2 px-4 bg-gray-100 hover:bg-gray-200 rounded text-gray-800 transition-colors">
+                            Potjiekos Kompetisie
+                        </a>
+                        <a href="/gholfdag.pdf" target="_blank" class="block w-full text-center py-2 px-4 bg-gray-100 hover:bg-gray-200 rounded text-gray-800 transition-colors">
+                            Gholfdag
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Program Block -->
+                <div class="bg-white rounded-lg p-6 border border-gray-200 flex flex-col items-center">
+                    <h3 class="text-2xl font-bold uppercase text-gray-800 mb-2 text-center">Program</h3>
+                    
+                    <!-- Icon Placeholder -->
+                    <div class="w-16 h-16 flex items-center justify-center mb-4">
+                        <img
+                            src={Program.src}
+                            alt="Program Icon"
+                            class="h-[3rem] w-[3rem] mx-1"
+                        />
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg> -->
+                    </div>
+                    
+                    <a href="/public/Dagprogram-2025-1.pdf" target="_blank" class="inline-flex items-center px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600 mb-4 transition-colors">
+                        Dagprogram
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                    </a>
+                    
+                    <div class="text-gray-700 text-center">
+                        <p class="font-semibold mb-2">Ingang Fooi:</p>
+                        <ul class="space-y-1">
+                            <li>Volwassenes - R60</li>
+                            <li>Senior Burgers - R30</li>
+                            <li>Kinders tot Graad 7 - R30</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map Button Below All Tabs -->
+            <div class="mt-12 text-center">
+                <a href="/skou-gronde-kaart.jpg" target="_blank" class="inline-flex items-center justify-center px-6 py-3 bg-gray-500 text-white text-lg font-medium rounded-md hover:bg-gray-600 transition-colors shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                    </svg>
+                    Kaart na die skou gronde
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="info" class="xl:px-[18%] lg:px-[10%] md:px-[5%] px-5 pt-36">
+        <h2 class="lg:text-6xl text-4xl md:text-center capitalize">Informasie vir die Lutzville Landbouskou</h2>
+        <div class="flex flex-col lg:flex-row my-10 gap-x-5">
+            <div>
+                <div class="py-5">
+                    <h3 class="text-3xl mb-2">Verblyf:</h3>
+                    <ul class="list-inside pl-5 text-gray-600 text-lg">
+                        <li>Daar is 'n kampeer area beskikbaar</li>
+                        <li>Koste: Gratis</li>
+                        <li>Sien asseblief kaart vir die kampeer area:</li>
+                        <li class="hover:text-gray-900 hover:underline pl-5"><a href="/Kampeer Area.pdf">Kamp Kaart</a></li>
+                    </ul>
+                </div>
+                <div class="py-5">
+                    <h3 class="text-3xl mb-2">Aansoek Vorms:</h3>
+                    <p class="pl-5 mb-2 text-lg">Wil jy deelneem aan die skou sien, asseblief die aansoek vorms hieronder:</p>
+                    <ul class="list-inside pl-10 text-gray-600 text-lg">
+                        <li class="hover:text-gray-900 hover:underline"><a href="/StalletjieAansoek.pdf">Stalletjie Aansoeke</a></li>
+                        <li class="hover:text-gray-900 hover:underline"><a href="/PerdeInskrywings.pdf">Perde Skou Inskrywings</a></li>
+                        <li class="hover:text-gray-900 hover:underline"><a href="/PotjiekosInskrywingsVorm.pdf">Potjiekos Kompetisie</a></li>
+                        <li class="hover:text-gray-900 hover:underline"><a href="/ToutrekInskrywingsvorm.jpg">Toutrek Kompetisie</a></li>
+                        <li class="hover:text-gray-900 hover:underline"><a href="/GholfdagLutzville.webp">Gholfdag</a></li>
+                    </ul>
+                </div>
+                <div class="py-5">
+                    <h3 class="text-3xl mb-2">Skedule & Algemene Inligting:</h3>
+                    <ul class="list-inside pl-5 text-gray-600 text-lg">
+                        <li class="hover:text-gray-900 hover:underline"><a href="/Dagprogram.pdf">Dag Program</a></li>
+                        <li>Ingang Fooi: R50 Volwassenes & R20 Kinders</li>
+                        <li class="hover:text-gray-900 hover:underline"><a href="/SkouGrondKaart.webp">Kaart na die skou gronde</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="place-content-center p-10 border-l-2 border-gray-900">
+                <img src={PotjieField.src} alt="Festival field with a shops" class="rounded-2xl">
+            </div>
+        </div>
+    </section> -->
+</BaseLayout>

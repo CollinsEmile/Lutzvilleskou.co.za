@@ -1,9 +1,12 @@
 ---
 import NAVBAR from "./NAVBAR.js"
-import facebook from '../images/facebook.svg';
+import facebook from '../images/FB.png';
+import tiktok from '../images/TIKTOK.png';
+import instagram from '../images/INSTA.png';
 ---
 
-<footer class="p-10 flex md:flex-row flex-col justify-around bg-gray-200 text-gray-950 h-68 border-t-4 border-gray-900">
+<footer class="p-10 flex md:flex-row flex-col justify-around items-center bg-gray-200 text-gray-950 border-t-4 border-gray-900">
+    <!-- Navigation Links -->
     <ul class="flex flex-wrap md:w-72 w-full items-center text-center md:my-0 my-5">
             {NAVBAR.map((item) => (
               <li
@@ -12,41 +15,48 @@ import facebook from '../images/facebook.svg';
               </li>
             ))}
     </ul>
-    <img src="/LutzvilleLogo21.png" class="md:h-56 md:w-auto max-w-72 mx-auto">
-    <div class="lg:flex w-72 hidden">
-            <div class="flex flex-row h-56 items-center">
-                <div class="ml-5 text-left">
-                    <h4 class="text-lg">Address</h4>
-                    <p>
-                        Posbus 182 <br>
-                        Lutzville  <br>
-                        8165        <br>
-                        Lutzville Sportsgronde <br>
-                    </p>
-                </div>
-            </div>
-            <div class="h-full flex flex-col place-content-center ml-10 gap-5">
-                  <!-- <a href="">
-                    <img
-                      src={instagram.src}
-                      alt="Link to instagram account"
-                      class="h-[2rem] mx-1"
-                    />
-                  </a> -->
-                  <a href="https://www.facebook.com/share/VSo4BrR9fNgdKRPf/?mibextid=qi2Omg">
-                    <img
-                      src={facebook.src}
-                      alt="Link to facebook account"
-                      class="h-[2rem] mx-1"
-                    />
-                  </a>
-                  <!-- <a href="">
-                    <img
-                      src={twitter.src}
-                      alt="Link to twitter account"
-                      class="h-[2rem] mx-1"
-                    />
-                  </a> -->
-            </div>
+    
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img src="/LOGO.png" class="h-32 md:h-44 md:w-auto max-w-72 mx-auto">
+    </div>
+    
+    <!-- Address and Social Links Container -->
+    <div class="flex flex-col md:flex-row md:items-center items-center md:w-72 w-full mt-6 md:mt-0 md:gap-6">
+        <!-- Address - Hidden on small screens -->
+        <div class="hidden md:block text-left">
+            <h4 class="text-lg underline"><strong>Adres:</strong></h4>
+            <p>
+                Posbus 182 <br>
+                Lutzville  <br>
+                8165        <br>
+                Lutzville Sportsgronde <br>
+            </p>
         </div>
+        
+        <!-- Social Media Links - Row on mobile, Column on desktop -->
+        <div class="flex flex-row md:flex-col justify-center gap-5 w-full md:w-auto">
+            <a href="https://www.instagram.com/lutzville_landbouskou/" target="_blank">
+                <img
+                  src={instagram.src}
+                  alt="Link to instagram account"
+                  class="h-[2rem] mx-1"
+                />
+            </a>
+            <a href="https://www.facebook.com/share/VSo4BrR9fNgdKRPf/?mibextid=qi2Omg"target="_blank">
+                <img
+                  src={facebook.src}
+                  alt="Link to facebook account"
+                  class="h-[2rem] mx-1"
+                />
+            </a>
+            <a href="https://www.tiktok.com/@lutzvilleskou" target="_blank">
+                <img
+                  src={tiktok.src}
+                  alt="Link to twitter account"
+                  class="h-[2rem] mx-1"
+                />
+            </a>
+        </div>
+    </div>
 </footer>

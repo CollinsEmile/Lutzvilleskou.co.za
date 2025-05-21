@@ -1,0 +1,40 @@
+
+---
+// ArtistCard.astro
+// Simple artist card component
+
+interface Props {
+  name: string;
+  image: string;
+}
+
+const { name, image } = Astro.props;
+---
+
+<div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+  <div class="relative">
+    <img 
+      src={image} 
+      alt={name} 
+      class="w-full h-80 object-cover object-top"
+    />
+  </div>
+  <div class="p-4">
+    <h3 class="font-medium text-xl text-center">{name}</h3>
+  </div>
+</div>
+
+<!-- Alternative version with overlay - uncomment if you prefer this style
+<div class="relative rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+  <img 
+    src={image} 
+    alt={name} 
+    class="w-full h-80 object-cover"
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+    <h3 class="text-white font-medium text-xl p-4">
+      {name}
+    </h3>
+  </div>
+</div>
+-->

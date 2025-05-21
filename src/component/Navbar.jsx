@@ -1,4 +1,6 @@
-import facebook from '../images/facebook.svg';
+import facebook from '../images/FB.png';
+import tiktok from '../images/TIKTOK.png';
+import instagram from '../images/INSTA.png';
 import hamburger from '../images/hamburger.svg';
 
 // function handleClick() {
@@ -10,10 +12,10 @@ import hamburger from '../images/hamburger.svg';
 const Navbar = ({ logo, items }) => {
   return (
     <>
-      <div className="flex flew-row justify-between px-[10%] md:items-center py-5 bg-gray-50 text-gray-900 fixed w-full border-b-2 border-gray-900 font-inter font-medium z-50">
+      <div className="flex flew-row justify-between px-[10%] md:items-center py-5 bg-gray-50 text-gray-900 fixed w-full border-b-2 border-gray-900 font-georgia font-medium z-50">
         {/* Logo */}
         <a href="/">
-          <img src={logo} alt="Lutzville Skou Logo" className="h-[5rem]" />
+          <img src={logo} alt="Lutzville Landbouskou" className="h-[5rem]" />
         </a>
         {/* Navbar Links */}
         <div className="nav-links absolute h-[60vh] md:h-[50vh] w-[100vw] left-0 top-[7rem] bg-gray-50 pt-10 lg:flex lg:flew-row lg:h-fit lg:relative lg:bg-transparent lg:w-fit lg:top-0 gap-x-5 lg:pt-0 lg:items-center border-b-2 border-gray-900 lg:border-0">
@@ -36,20 +38,31 @@ const Navbar = ({ logo, items }) => {
               className="h-[2rem]"
             />
           </a> */}
-          <a href="https://www.facebook.com/share/VSo4BrR9fNgdKRPf/?mibextid=qi2Omg">
+          <a
+            href="https://www.facebook.com/share/VSo4BrR9fNgdKRPf/?mibextid=qi2Omg"
+            target="_blank">
             <img
               src={facebook.src}
               alt="Link to facebook account"
               className="h-[2rem]"
             />
           </a>
-          {/* <a href="">
+          <a
+            href="https://www.instagram.com/lutzville_landbouskou/"
+            target="_blank">
             <img
-              src={twitter.src}
-              alt="Link to twitter account"
+              src={instagram.src}
+              alt="Link to instagram account"
               className="h-[2rem]"
             />
-          </a> */}
+          </a>
+          <a href="https://www.tiktok.com/@lutzvilleskou" target="_blank">
+            <img
+              src={tiktok.src}
+              alt="Link to tiktok account"
+              className="h-[2rem]"
+            />
+          </a>
         </div>
         <button
           onClick={() => {
