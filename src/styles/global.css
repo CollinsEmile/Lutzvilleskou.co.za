@@ -17,10 +17,10 @@
 }
 
 .backgroundImageFixed {
-  background-image: url('../images/stalletjies7.webp');
-  background-size: cover;
+  background-image: url('../images/StalletjieBanner.png');
+  background-size: 100vw;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .backgroundImageFixed1 {
   background-image: url('../images/perde12.webp');
