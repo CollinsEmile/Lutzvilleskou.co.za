@@ -7,6 +7,7 @@ export default {
       inter: ['"Inter", sans-serif'],
       georgia: ['Georgia', 'serif'],
       playwrite: ['"Playwrite DK Loopet"', 'serif'],
+      authenia: ['Authenia', 'serif'],
     },
     extend: {},
   },

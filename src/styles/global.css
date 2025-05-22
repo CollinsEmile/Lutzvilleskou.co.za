@@ -3,6 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: 'Authenia';
+    src: url('/fonts/Authenia.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
 .Landing {
   background-image: url('../images/landingImage.jpg');
   background-position: top;
