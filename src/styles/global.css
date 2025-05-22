@@ -71,6 +71,11 @@ textarea {
   }
   .expanded {
     display: flex;
+    flex-direction: column;
+    /* Remove fixed height to allow dynamic content */
+    min-height: fit-content;
+    max-height: calc(100vh - 7rem); /* Prevent it from going below viewport */
+    overflow-y: auto; /* Add scroll if content exceeds viewport */
   }
 }
 @media only screen and (max-width: 768px) {
