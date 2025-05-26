@@ -1,6 +1,6 @@
 ---
 // import SPONSERS from './SPONSERS.js';
-import phone from '/public/phone.svg';
+import phone from '/public/Phone.png';
 import email from '/public/Mail.png';
 import Stalletjie from '../images/www.lizellelotter.co.zaLutzvilleSkou2024-119.jpg';
 import Perde from '../images/www.lizellelotter.co.zaLutzvilleSkou2024-126.jpg';
@@ -8,13 +8,13 @@ import comittee from '../images/www.lizellelotter.co.zaLutzvilleSkou2024-132.jpg
 
 // KunstenaarsSection.astro
 // Import the ArtistCard component
-import ArtistCard from './ArtistCard.astro';
+// import ArtistCard from './ArtistCard.astro';
 
 // Define the artists data
 const artists = [
   { id: 1, name: "Leah", image: "/LigteLaag-8.jpg" },
   { id: 2, name: "Johan van der Merwe", image: "/WhatsApp Image 2025-04-22 at 10.27.07.jpeg" },
-  { id: 3, name: "Armand Steenkamp", image: "/WhatsApp Image 2025-04-22 at 10.27.04.png" },
+  { id: 3, name: "Armand Steenkamp", image: "/Armand.jpg" },
   { id: 4, name: "Wikus van der Merwe", image: "/Abri_Kruger_Fine_Art_Photography (130 of 415).jpg" },
 ];
 
@@ -93,44 +93,45 @@ const artists = [
                         <h3 class="text-xl font-semibold text-gray-800">{artist.name}</h3>
                     </div>
                 </div>
-            ))}
+            ))
+            }
         </div>
     </div>
 </section>
 
-<!-- Contact Form Section (Closer to original design) -->
-<section id="ContactForm1" class="w-full h-fit py-16 bg-gradient-to-b from-white to-gray-100">
-    <div class="w-10/12 md:w-4/5 lg:w-3/4 mx-auto">
-        <div class="bg-gray-50/60 p-8 md:p-10 rounded-3xl shadow-lg">
-            <h2 class="text-center text-3xl md:text-4xl lg:text-5xl mb-5 relative inline-block w-full after:content-[''] after:block after:w-32 after:h-1 after:bg-gray-500 after:mx-auto after:mt-4">Kontak Ons</h2>
+<!-- Contact Form Section (Optimized for desktop) -->
+<section id="ContactForm1" class="w-full h-fit py-12 lg:py-14 bg-gradient-to-b from-white to-gray-100">
+    <div class="w-10/12 md:w-4/5 lg:w-2/3 xl:w-3/5 mx-auto">
+        <div class="bg-gray-50/60 p-6 md:p-8 lg:p-10 rounded-3xl shadow-lg">
+            <h2 class="text-center text-2xl md:text-3xl lg:text-4xl mb-4 lg:mb-6 relative inline-block w-full after:content-[''] after:block after:w-24 lg:after:w-32 after:h-1 after:bg-[#2C2C2C] after:mx-auto after:mt-3">Kontak Ons</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                 <!-- Form Column -->
-                <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col xl:px-12 py-8 gap-5">
+                <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col lg:px-8 xl:px-10 py-6 gap-4">
                     <input type="hidden" name="access_key" value="243f9187-450a-4f7a-bd5c-8f680df12571">
-                    <div class="flex flex-col sm:flex-row gap-5">
-                        <input type="text" id="Naam" name="Naam" placeholder="Naam" class="p-3 rounded-md border-2 border-gray-300 w-full sm:w-1/2 focus:border-gray-500 focus:outline-none transition-colors duration-200">
-                        <input type="text" id="Van" name="Van" placeholder="Van" class="p-3 rounded-md border-2 border-gray-300 w-full sm:w-1/2 focus:border-gray-500 focus:outline-none transition-colors duration-200">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input type="text" id="Naam" name="Naam" placeholder="Naam" class="p-2.5 lg:p-3 rounded-md border-2 border-gray-300 w-full sm:w-1/2 focus:border-gray-500 focus:outline-none transition-colors duration-200 text-sm lg:text-base">
+                        <input type="text" id="Van" name="Van" placeholder="Van" class="p-2.5 lg:p-3 rounded-md border-2 border-gray-300 w-full sm:w-1/2 focus:border-gray-500 focus:outline-none transition-colors duration-200 text-sm lg:text-base">
                     </div>
                     
-                    <input type="email" id="Epos" name="Epos" placeholder="Epos" class="p-3 rounded-md border-2 border-gray-300 focus:border-gray-500 focus:outline-none transition-colors duration-200">
+                    <input type="email" id="Epos" name="Epos" placeholder="Epos" class="p-2.5 lg:p-3 rounded-md border-2 border-gray-300 focus:border-gray-500 focus:outline-none transition-colors duration-200 text-sm lg:text-base">
                     
-                    <input type="tel" id="Tel" name="Selfoonnommer" placeholder="Selfoonnommer" class="p-3 rounded-md border-2 border-gray-300 focus:border-gray-500 focus:outline-none transition-colors duration-200">
+                    <input type="tel" id="Tel" name="Selfoonnommer" placeholder="Selfoonnommer" class="p-2.5 lg:p-3 rounded-md border-2 border-gray-300 focus:border-gray-500 focus:outline-none transition-colors duration-200 text-sm lg:text-base">
                     
-                    <textarea id="Boodskap" name="Boodskap" placeholder="Boodskap" rows="5" class="p-3 rounded-md border-2 border-gray-300 focus:border-gray-500 focus:outline-none transition-colors duration-200"></textarea>
+                    <textarea id="Boodskap" name="Boodskap" placeholder="Boodskap" rows="4" class="p-2.5 lg:p-3 rounded-md border-2 border-gray-300 focus:border-gray-500 focus:outline-none transition-colors duration-200 text-sm lg:text-base resize-none"></textarea>
                     
-                    <button type="submit" class="w-1/2 mx-auto p-3 bg-transparent text-gray-800 font-semibold rounded-full text-xl uppercase border-2 border-gray-800 hover:bg-gray-800 hover:text-white transition-all duration-300 transform hover:scale-105 mt-4">
+                    <button type="submit" class="w-2/3 lg:w-1/2 mx-auto p-2.5 lg:p-3 bg-transparent text-gray-800 font-semibold rounded-full text-lg lg:text-xl uppercase border-2 border-gray-800 hover:bg-gray-800 hover:text-white transition-all duration-300 transform hover:scale-105 mt-3">
                         Stuur
                     </button>
                 </form>
                 
-                <!-- Contact Info Column (More similar to original) -->
-                <div class="flex flex-col justify-center items-center h-full gap-8 py-8">
+                <!-- Contact Info Column -->
+                <div class="flex flex-col justify-center items-center h-full gap-6 lg:gap-8 py-6">
                     <!-- Phone Contacts -->
                     <div class="flex flex-col items-center">
-                        <img src={phone.src} alt="Phone" class="h-10 md:h-12 mb-4">
+                        <img src={phone.src} alt="Phone" class="h-8 md:h-10 lg:h-11 mb-3 lg:mb-4">
                         <div class="text-center">
-                            <ul class="space-y-2 text-2xl">
+                            <ul class="space-y-1 lg:space-y-2 text-lg lg:text-xl xl:text-2xl">
                                 <li>Melanie Agenbag - 083 283 3617</li>
                             </ul>
                         </div>
@@ -138,9 +139,9 @@ const artists = [
                     
                     <!-- Email Contacts -->
                     <div class="flex flex-col items-center">
-                        <img src={email.src} alt="Email" class="h-10 md:h-12 mb-4">
+                        <img src={email.src} alt="Email" class="h-8 md:h-10 lg:h-11 mb-3 lg:mb-4">
                         <div class="text-center">
-                            <ul class="space-y-2 text-2xl">
+                            <ul class="space-y-1 lg:space-y-2 text-lg lg:text-xl xl:text-2xl">
                                 <li>admin@lutzvilleskou.co.za</li>
                                 <li>info@lutzvilleskou.co.za</li>
                             </ul>

@@ -14,6 +14,7 @@ interface Activity {
   image: string;
   buttonText?: string;
   buttonLink?: string;
+  overlayText?: string;
 }
 
 // Get props with defaults
@@ -30,6 +31,7 @@ const {
                 image={activity.image}
                 buttonText={activity.buttonText}
                 buttonLink={activity.buttonLink}
+                overlayText={activity.overlayText}
             />
             ))}
         </div>

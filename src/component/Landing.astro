@@ -1,14 +1,47 @@
 ---
 
 ---
-<section id="Landing" class="Landing h-[90vh] xl:h-[80vh] flex">
-    <div class="flex flex-col bg-gray-50/70 w-fit xl:w-[50%] 2xl:w-[45%] p-5 mx-auto place-self-center items-center gap-5 rounded-2xl border-amber-600 border-2 justify-evenly">
-        <div class="order-2 xl:order-1 inline-block text-center text-gray-900">
-            <h1 class="uppercase text-4xl xl:text-5xl 2xl:text-5xl my-2 font-georgia">Lutzville Landbouskou</h1>
-            <h3 class="font-authenia text-3xl sm:text-4xl xl:text-5xl 2xl:text-5xl my-2 text-amber-600 py-3">Ervaar die gees van ons landboufees!</h3>
-            <h3 class="text-4xl uppercase font-georgia">31 Julie - 2 Augustus 2025</h3>
-            <a href="/Dagprogram-2025-1.pdf" target="_blank" class="font-georgia mt-5 p-3 hover:bg-gray-600 hover:text-amber-600 my-2 rounded-full text-xl uppercase bg-yellow-700 inline-block">Dagprogram</a>
-            <p class="text-gray-900/70">(Dagprogram is nog nie gefinaliseer nie)</p>
+<section id="Landing" class="Landing min-h-[90vh] xl:min-h-[80vh] flex px-4 py-8">
+    <div class="flex flex-col bg-[#2C2C2C]/80 w-full max-w-4xl mx-auto place-self-center items-center gap-3 sm:gap-4 rounded-2xl justify-center p-4 sm:p-6 lg:p-8">
+        <div class="order-2 xl:order-1 inline-block text-center text-gray-50 w-full">
+            <!-- Main heading - responsive text sizes -->
+            <h1 class="uppercase text-2xl sm:text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl mb-2 sm:mb-3 font-georgia leading-tight whitespace-nowrap">
+                Lutzville Landbouskou
+            </h1>
+            
+            <!-- Subtitle with special styling -->
+            <h3 class="font-authenia text-2xl sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl mb-2 sm:mb-3 text-[#C49A3C] py-1 sm:py-2 leading-snug">
+                Ervaar die gees van ons landboufees!
+            </h3>
+            
+            <!-- Date -->
+            <h3 class="text-2xl sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl uppercase font-georgia mb-3 sm:mb-4 leading-tight">
+                31 Julie - 2 Augustus 2025
+            </h3>
+            
+            <a href="/Dagprogram-2025-1.pdf" 
+               target="_blank" 
+               class="mt-4 sm:mt-6 px-6 sm:px-8 py-3 sm:py-4 
+                      text-lg sm:text-xl uppercase bg-[#C49A3C] 
+                      inline-block rounded-full
+                      transition-all duration-300 ease-in-out
+                      hover:bg-[#2C2C2C] hover:text-[#C49A3C] 
+                      hover:scale-105 hover:shadow-lg hover:shadow-[#C49A3C]/20
+                      active:scale-95 active:transition-none
+                      transform-gpu
+                      border-2 border-transparent hover:border-[#C49A3C]/30
+                      relative overflow-hidden
+                      before:absolute before:inset-0 before:bg-gradient-to-r 
+                      before:from-transparent before:via-white/5 before:to-transparent
+                      before:translate-x-[-100%] hover:before:translate-x-[100%]
+                      before:transition-transform before:duration-700 before:ease-out">
+                Dagprogram
+            </a>
+            
+            <!-- Disclaimer text -->
+            <p class="text-gray-300/80 text-sm sm:text-base mt-2 sm:mt-3 leading-relaxed max-w-md mx-auto italic">
+                (Dagprogram is nog nie gefinaliseer nie.)
+            </p>
         </div>
     </div>
 </section>

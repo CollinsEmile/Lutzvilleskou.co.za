@@ -8,6 +8,7 @@ interface Props {
   image: string;
   buttonText?: string;
   buttonLink?: string;
+  overlayText?: string;
 }
 
 const { 
@@ -15,21 +16,33 @@ const {
   // description, 
   image, 
   buttonText, 
-  buttonLink 
+  buttonLink,
+  overlayText
 } = Astro.props;
 
 // Determine if we should show the button
 const showButton = buttonText && buttonLink;
+// Determine if we should show overlay
+const showOverlay = overlayText;
 ---
 
 <div class="rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
   <!-- Image Container with fixed aspect ratio -->
-  <div class="relative aspect-[3/4] w-full overflow-hidden">
+  <div class="relative aspect-[3/4] w-full overflow-hidden group">
     <img 
       src={image} 
       alt={title} 
       class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
     />
+    
+    <!-- Overlay - always visible when overlayText is provided -->
+    {showOverlay && (
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end justify-center p-6">
+        <div class="bg-white/95 backdrop-blur-sm rounded-lg px-4 py-3 shadow-lg border border-white/20 transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
+          <div class="text-gray-800 text-center text-sm lg:text-base font-semibold leading-relaxed" set:html={overlayText}></div>
+        </div>
+      </div>
+    )}
   </div>
   
   <!-- Content Container -->

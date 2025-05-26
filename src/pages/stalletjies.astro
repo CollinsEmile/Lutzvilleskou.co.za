@@ -1,64 +1,52 @@
 ---
 import BaseLayout from "../layout/BaseLayout.astro"
 import pakkie1 from "../images/www.lizellelotter.co.zaLutzvilleSkou2024-28.jpg"
-
 ---
+
 <BaseLayout title="Skou Stalletjies" description="Die stalletjies wat op die skou gronde gaan wees, en die aansoeke om 'n stalletjie te kry">
-    <div class="container mx-auto px-4 pt-12 max-w-4xl">
-        <div class="text-center mb-8">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl uppercase font-georgia font-bold text-gray-900 relative inline-block after:content-[''] after:block after:w-24 after:h-1 after:bg-gray-900/50 after:mx-auto after:mt-3">Stalletjies</h2>
+    <div class="container mx-auto px-4 pt-8 lg:pt-12 max-w-6xl">
+        <div class="text-center mb-6 lg:mb-8">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase font-bold text-[#2C2C2C] relative inline-block after:content-[''] after:block after:w-20 lg:after:w-24 after:h-1 after:bg-[#2C2C2C] after:mx-auto after:mt-3">Stalletjies</h2>
         </div>
         
-        <div class="flex sm:flex-row flex-col gap-6 md:gap-10 items-center">
-            <div class="sm:w-2/3">
-                <p class="text-base md:text-lg text-gray-800 mb-6">
+        <div class="flex flex-col md:flex-row gap-6 lg:gap-8 xl:gap-10 items-stretch mb-8 lg:mb-12">
+            <!-- Text Content -->
+            <div class="md:w-1/2 flex flex-col justify-center">
+                <p class="text-sm md:text-base lg:text-lg text-gray-800 mb-4 lg:mb-6 leading-relaxed">
                     Hierdie jaar bars die stalletjies uit hul nate met 'n ongelooflike verskeidenheid handgemaakte kunswerke, kreatiewe kunsuitstallings, unieke kultuurskatte en heerlike natuur-geïnspireerde vermaak vir die jongspan!
                 </p>
                 
-                <p class="text-base md:text-lg font-semibold text-gray-900 mt-4">
+                <p class="text-sm md:text-base lg:text-lg font-semibold text-gray-900 leading-relaxed">
                     Droom jy daarvan om jou eie stalletjie te hê? Moenie wag nie - doen nou aansoek hieronder en wees deel van die opwinding!
                 </p>
             </div>
             
-            <div class="sm:w-1/3 min-h-[200px] bg-gray-200 rounded flex items-center justify-center">
-                <img src={pakkie1.src} alt="Stalletjie beeld" class="max-w-full h-auto">
-                <!-- Placeholder for when image is empty -->
+            <!-- Image Container -->
+            <div class="md:w-1/2 flex items-center justify-center">
+                <div class="w-full h-full min-h-[250px] md:min-h-[200px] lg:min-h-[280px] overflow-hidden rounded-lg shadow-md">
+                    <img src={pakkie1.src} 
+                         alt="Stalletjie beeld" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                </div>
             </div>
         </div>
         
-        <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] h-96 backgroundImageFixed flex items-center mt-12">
-            <div class="mx-auto w-fit h-fit">
-                <a href="/StalletjieAansoek.pdf" 
-                   class="inline-block text-2xl md:text-4xl opacity-80 border-4 p-3 md:p-5 border-gray-900 
-                          bg-gray-50 rounded-full hover:bg-gray-900 hover:border-gray-50 
-                          hover:text-white transition duration-300 ease-in-out">
-                    Stalletjie Aansoek Vorms
+        <!-- Call-to-Action Section -->
+        <div class="w-screen relative left-1/2 right-1/2 -mx-[50vw] h-80 lg:h-96 backgroundImageFixed flex items-center">
+            <div class="mx-auto w-fit h-fit px-4">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeBoIXzTVbmb6D9TD0CpqN-a13SM_ISoD9aUHyHdmF-pSKM_A/viewform?usp=sharing"
+                   target="_blank"
+                   class="inline-block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 
+                          opacity-90 border-3 lg:border-4 p-3 sm:p-4 md:p-5 lg:p-6
+                          border-gray-900 bg-gray-50/95 backdrop-blur-sm rounded-full 
+                          hover:bg-gray-900 hover:border-gray-50 hover:text-white 
+                          hover:scale-105 hover:shadow-lg hover:shadow-gray-900/20
+                          active:scale-95 active:transition-none
+                          transition-all duration-300 ease-in-out transform
+                          font-semibold text-center whitespace-nowrap">
+                    Stalletjie Aansoekvorms
                 </a>
             </div>
         </div>
     </div>
-    <!-- <section class="pt-32 text-gray-900">
-        <div class="mx-[2%] sm:mx-[5%] md:mx-[10%] lg:mx-[20%] pb-16">
-            <h2 class="text-5xl my-4 text-center py-5">Stalletjies</h2>
-            <div class="flex flex-col md:flex-row gap-5 h-fit pt-5 justify-center items-center">
-                <div class="md:w-1/2 rounded-xl text-center">
-                    <p class="text-start text-2xl">
-                         Hierdie jaar beloof die stalletjies 'n verskeidenheid van handwerke, kuns en kultuur, en natuur kindervermaak vir die jongspan.
-                         <br><br>
-                         Doen aansoek vir 'n stalletjie van jou eie hieronder.
-                    </p>
-                </div>
-                <div class="hidden md:flex md:w-1/2 p-5 border-b-2 border-r-2 border-gray-900">
-                    <img src={stalletjies2.src} alt="" class="">
-                    <img src={vuur.src} alt="" class="">
-                    <img src={pakkie1.src} alt="A table packed with delicious goods" class="rounded-tr-3xl rounded-bl-3xl">
-                </div>
-            </div>     
-        </div>
-        <div class="w-dvw h-96 backgroundImageFixed flex items-center">
-            <div class="mx-auto w-fit h-fit">
-                <a href="/StalletjieAansoek.pdf" class="text-2xl md:text-4xl opacity-80 border-4 p-3 md:p-5 border-gray-900 bg-gray-50 rounded-full hover:bg-gray-900 hover:border-gray-50 hover:text-gray-100">Stalletjie Aansoek Vorms</a>
-            </div>
-        </div>
-    </section> -->
 </BaseLayout>
