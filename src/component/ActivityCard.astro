@@ -37,10 +37,8 @@ const showOverlay = overlayText;
     
     <!-- Overlay - always visible when overlayText is provided -->
     {showOverlay && (
-      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end justify-center p-6">
-        <div class="bg-white/95 backdrop-blur-sm rounded-lg px-4 py-3 shadow-lg border border-white/20 transform transition-all duration-300 group-hover:scale-105 group-hover:shadow-xl">
-          <div class="text-gray-800 text-center text-sm lg:text-base font-semibold leading-relaxed" set:html={overlayText}></div>
-        </div>
+      <div class="absolute bottom-0 left-0 right-0 backdrop-blur-sm px-4 py-3 shadow-lg " style="background-color: #2C2C2C;">
+        <div class="text-gray-50 text-center text-sm lg:text-base leading-none" style="line-height: 1.2;" set:html={overlayText}></div>
       </div>
     )}
   </div>

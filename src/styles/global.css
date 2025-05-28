@@ -14,7 +14,7 @@
 }
 
 .Landing {
-  background-image: url('../images/landingImage.jpg');
+  background-image: url('../images/landingImage.webp');
   background-position: top;
   background-size: cover;
 }
@@ -26,12 +26,44 @@
   background-attachment: fixed;
 }
 
+/* Single background image - fixed and responsive */
 .backgroundImageFixed {
-  background-image: url('../images/StalletjieBanner.png');
-  background-size: 100vw;
+  background-image: url('../images/stalletjies.webp');
+  background-size: 100vw auto;
   background-position: center;
+  background-repeat: no-repeat;
   /* background-attachment: fixed; */
+  width: 100vw;
+  height: 40vh;
+  min-height: 20vh; /* Minimum height to ensure visibility */
+  max-height: 50vh; /* Maximum height constraint */
+  overflow: hidden;
 }
+
+/* Tablet optimization */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .backgroundImageFixed {
+    max-height: fit-content;
+    min-height: 30vh;
+  }
+}
+
+/* Mobile optimization - fixed backgrounds can cause issues */
+@media (max-width: 768px) {
+  .backgroundImageFixed {
+    background-attachment: scroll;
+    max-height: fit-content;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .backgroundImageFixed {
+    max-height: fit-content;
+    min-height: 20vh;
+  }
+}
+
 .backgroundImageFixed1 {
   background-image: url('../images/perde12.webp');
   background-size: cover;
@@ -40,21 +72,21 @@
 }
 
 #ContactForm {
-  background-image: url('../images/www.lizellelotter.co.zaLutzvilleSkou2024-50.jpg');
+  background-image: url('../images/www.lizellelotter.co.zaLutzvilleSkou2024-50.webp');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 #ContactForm1 {
-  background-image: url('../images/www.lizellelotter.co.zaLutzvilleSkou2024-136.jpg');
+  background-image: url('../images/www.lizellelotter.co.zaLutzvilleSkou2024-136.webp');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 #Inligting {
-  background-image: url('../images/www.lizellelotter.co.zaLutzvilleSkou2024-85.jpg');
+  background-image: url('../images/www.lizellelotter.co.zaLutzvilleSkou2024-85.webp');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -63,12 +95,12 @@ textarea {
   resize: none;
 }
 
-.kontakBackground {
+/* .kontakBackground {
   background-image: url('../images/landing.webp');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
+} */
 
 .slick-dots li button:before {
   color: #f7f7f7 !important;
@@ -86,10 +118,5 @@ textarea {
     min-height: fit-content;
     max-height: calc(100vh - 7rem); /* Prevent it from going below viewport */
     overflow-y: auto; /* Add scroll if content exceeds viewport */
-  }
-}
-@media only screen and (max-width: 768px) {
-  .backgroundImageFixed {
-    background-image: url('../images/PotjieField.webp');
   }
 }
