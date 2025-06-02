@@ -18,14 +18,16 @@ interface Activity {
 }
 
 // Get props with defaults
-const { 
+const {
   activities = []
 } = Astro.props;
 ---
+
 <section class="py-12 px-4 max-w-7xl mx-auto">
-        <!-- Responsive Grid - adjusts number of columns based on viewport width -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
-            {activities.map((activity) => (
+    <!-- Flexbox approach for better center alignment -->
+    <div class="flex flex-wrap justify-center gap-6">
+        {activities.map((activity) => (
+        <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
             <ActivityCard 
                 title={activity.title}
                 image={activity.image}
@@ -33,6 +35,7 @@ const {
                 buttonLink={activity.buttonLink}
                 overlayText={activity.overlayText}
             />
-            ))}
         </div>
-    </section>
+        ))}
+    </div>
+</section>

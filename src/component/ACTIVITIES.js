@@ -27,15 +27,15 @@ const activities = [
     buttonText: 'Skryf In',
     buttonLink: '/INSKRYWINGSVORM perde 2025.pdf',
   },
-  {
-    id: 4,
-    title: 'Veteraan Trekkers en Karre',
-    // description:
-    //   'Rejuvenate your mind and body with our peaceful yoga sessions in nature.',
-    image: '/Veteraan trekkers en karre.webp',
-    // buttonText: 'Skryf In',
-    // buttonLink: '/activities/yoga',
-  },
+  // {
+  //   id: 4,
+  //   title: 'Veteraan Trekkers en Karre',
+  //   // description:
+  //   //   'Rejuvenate your mind and body with our peaceful yoga sessions in nature.',
+  //   image: '/Veteraan trekkers en karre.webp',
+  //   // buttonText: 'Skryf In',
+  //   // buttonLink: '/activities/yoga',
+  // },
   {
     id: 5,
     title: 'Petting Zoo',
@@ -50,12 +50,21 @@ const activities = [
     title: 'Trekker Ry Kompetisie',
     // description:
     //   'Observe the night sky with telescopes and guidance from astronomy experts.',
-    image: '/TrekkerRyKompetisie.webp',
+    image: '/John Deere Tractor.webp',
     // buttonText: 'Skryf In',
     // buttonLink: '/activities/stargazing',
   },
   {
     id: 7,
+    title: 'Sweepslaan Kompetisie',
+    // description:
+    //   'Observe the night sky with telescopes and guidance from astronomy experts.',
+    image: '/sweep.webp',
+    // buttonText: 'Skryf In',
+    // buttonLink: '/activities/stargazing',
+  },
+  {
+    id: 8,
     title: 'Junior Mnr. en Mej. Skoukoning en -koningin',
     // description:
     //   'Observe the night sky with telescopes and guidance from astronomy experts.',
@@ -64,7 +73,7 @@ const activities = [
       '<strong>Aangebied deur</strong> Hansie en Grietjie Kleuterskool by die Lutzville Landbouskou. <br> Kleuters van Gr. RRR tot Gr. 3 is welkom om deel te neem. <br> <strong>Datum:</strong> 31 Julie 2025 |  Tyd: 17:30 <br> <strong>Plek:</strong> Skougronde, Lutzville <br> <strong>Inskrywingsfooi:</strong> R50 per deelnemer <br> <i>Inskrywings sluit 26 Julie 2025.</i> <br> <strong>Toegang:</strong> R20 per toeskouer<br> <i>(by die hek of vooraf betaalbaar)</i> <br> Inskrywings kan gedoen word by Hansie en Grietjie Kleuterskool of via WhatsApp. <br> <strong>Navrae:</strong> Leanne Joubert - 082 925 3994',
   },
   {
-    id: 8,
+    id: 9,
     title: 'Mej Skoukoningin',
     // description:
     //   'Observe the night sky with telescopes and guidance from astronomy experts.',
@@ -73,20 +82,11 @@ const activities = [
       "Stuur 'n foto of twee met 'n kort beskrywing van jouself en waar jy vandaan kom na admin@lutzvilleskou.co.za of WhatsApp na 084 580 2562.",
   },
   {
-    id: 9,
+    id: 10,
     title: 'Vroueoggend',
     image: '/Vrouedag.webp',
     overlayText:
       '<strong>Kaartjies:</strong> Mia - 076 646 6512 <br> <strong>Tyd:</strong> 9h30 vir 10h00 <br> <strong>Koste:</strong> R150 per persoon',
-  },
-  {
-    id: 10,
-    title: 'Sweepslaan Kompetisie',
-    // description:
-    //   'Observe the night sky with telescopes and guidance from astronomy experts.',
-    image: '/sweep.webp',
-    // buttonText: 'Skryf In',
-    // buttonLink: '/activities/stargazing',
   },
   {
     id: 11,
