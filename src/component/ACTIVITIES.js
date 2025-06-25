@@ -38,10 +38,10 @@ const activities = [
   },
   {
     id: 5,
-    title: 'Trekker Ry Kompetisie',
+    title: 'Wynproe met Lutzville Wingerde',
     // description:
     //   'Observe the night sky with telescopes and guidance from astronomy experts.',
-    image: '/John Deere Tractor.webp',
+    image: '/LVTAE 1.webp',
     // buttonText: 'Skryf In',
     // buttonLink: '/activities/stargazing',
   },
@@ -78,6 +78,9 @@ const activities = [
     image: '/Vrouedag.webp',
     overlayText:
       '<strong>Kaartjies:</strong> Mia - 076 646 6512 <br> <strong>Tyd:</strong> 9h30 vir 10h00 <br> <strong>Koste:</strong> R150 per persoon',
+    buttonText: 'Kaartjies',
+    buttonLink:
+      'https://www.kaarkies.co.za/event-details/lutzville-landbouskou',
   },
   {
     id: 10,
