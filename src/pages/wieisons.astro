@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layout/BaseLayout.astro";
-import komittee from '../images/komittee.webp'
+import komittee1 from '../images/Komitee1.webp'
+import komittee2 from '../images/Komitee2.webp'
 import Perde1 from "../images/www.lizellelotter.co.zaLutzvilleSkou2024-56.webp";
 import stalletjies6 from "../images/www.lizellelotter.co.zaLutzvilleSkou2024-99.webp"
 ---
@@ -54,8 +55,8 @@ import stalletjies6 from "../images/www.lizellelotter.co.zaLutzvilleSkou2024-99.
             <!-- Our Committee Section -->
             <div class="flex flex-col py-12 lg:py-16 xl:px-[8%] lg:px-[6%] md:px-[4%] px-[3%] text-center mt-8 lg:mt-12 bg-white rounded-lg shadow-sm max-w-6xl mx-auto">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl text-center uppercase relative inline-block mx-auto after:content-[''] after:block after:w-20 lg:after:w-24 after:h-1 after:bg-gray-900 after:mx-auto after:mt-3 mb-6 lg:mb-8">Ons Komitee</h2>
-                <div class="flex flex-col md:flex-row gap-4 lg:gap-6 py-4 lg:py-6">
-                    <div class="md:w-1/2 md:pb-0 self-center">
+                <div class="flex flex-col gap-4 lg:gap-6 py-4 lg:py-6">
+                    <div class="md:w-3/5 md:pb-0 self-center">
                         <p class="text-justify leading-relaxed text-sm lg:text-base">
                             Ons komitee bestaan uit 8 toegewyde en hardwerkende lede, elk met unieke vaardighede en talente wat hulle bydra tot die span.
                         </p>
@@ -63,8 +64,24 @@ import stalletjies6 from "../images/www.lizellelotter.co.zaLutzvilleSkou2024-99.
                             Elke lid is sorgvuldig gekies om te verseker dat alle afdelings van die skou effektief ontwikkel en bestuur word. Die bydraes van elkeen is van groot waarde, en elke lid speel 'n sleutelrol in die sukses van ons organisasie. Ons erken en waardeer die spesifieke waarde wat elke lid tot die geheel bring, en glo dat ons kollektiewe poging die fondament van ons sukses is.
                         </p>
                     </div>
-                    <div class="md:w-1/2 place-content-center overflow-hidden rounded-lg">
-                        <img src={komittee.src} alt="Komitee of the Lutzville Landbouskou" class="w-full h-64 md:h-80 lg:h-96 object-cover transition-transform duration-500 hover:scale-105">
+                    <!-- Updated responsive dual image container -->
+                    <div class="place-content-center">
+                        <!-- Single column on screens smaller than large, side by side on large+ -->
+                        <div class="flex flex-col lg:flex-row gap-3 lg:gap-4">
+                            <!-- First Image -->
+                            <div class="overflow-hidden rounded-lg lg:w-1/2">
+                                <img src={komittee1.src}
+                                    alt="Komitee lede van die Lutzville Landbouskou" 
+                                    class="w-full object-cover transition-transform duration-500 hover:scale-105">
+                            </div>
+                            
+                            <!-- Second Image -->
+                            <div class="overflow-hidden rounded-lg lg:w-1/2">
+                                <img src={komittee2.src} 
+                                    alt="Komitee vergadering" 
+                                    class="w-full object-cover transition-transform duration-500 hover:scale-105">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
